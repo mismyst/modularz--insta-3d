@@ -1,0 +1,252 @@
+
+	/*==========--------------==========*/
+	/*==========   Download   ==========*/
+	/*==========--------------==========*/
+	.dl-product{
+		height: 100px; /* img: 140x140 */
+		padding: 20px;
+		border-bottom: 1px dashed #CED6E6;
+    overflow: hidden;
+	}
+		.dl-product .date{
+			color: #999;
+			font-size: 12px;
+			font-family: Helvetica, sans-serif;
+			font-weight: 300;
+		}
+		.dl-product img{
+			padding-right: 20px;
+			float: left;
+		}
+		.dl-product .det{
+			float: left;
+		}
+			.dl-product .title{
+				width: 300px;
+				font-size: 16px;
+				font-weight: 700;
+				display: inline-block;
+				color: inherit;
+				padding: 10px 0 5px 0;
+			}
+			.dl-product .title:hover{
+				text-decoration: none;
+				color: #000;
+			}
+				.dl-product .title .light{
+					font-weight: 300;
+				}
+			.dl-product .auth{
+				/*font-style: italic;*/				
+			}
+	
+	.dl-product .btn-line {
+		margin: 30px 0px 0 0px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 12px;
+	}
+		.dl-product .btn-line:hover {
+			text-decoration: none;
+			background: #498CCC;
+			color: #fff;
+		}
+		.dl-product .btn-line > span{
+			position: relative;
+			top: 2px;
+			left: -3px;
+		}
+	.dl-product .right{
+		line-height: 100px;
+		width: 300px;
+	}
+		.dl-product .right > div{
+			float: left;
+			width: 33%; /* 25 */
+			font-size: 14px;
+			text-align: center;					
+		}
+
+/***************/
+  /** Thanks for your purchase **/
+  /*************/
+  .thanks-block{
+    color: #fff;
+    background: #5199d9;
+    width: 620px;
+    margin: 30px 0 0 20px;
+    border-radius: 5px;
+  }
+  .thanks-block:before{
+    display: block;
+    content: "";
+    width: 21px; height: 21px;
+    background: #3d7ab1;
+    background: -moz-linear-gradient(45deg,  #3d7ab1 0%, #32618c 50%, #eff1f5 50%, #eff1f5 100%);
+    background: -o-linear-gradient(45deg,  #3d7ab1 0%,#32618c 50%,#eff1f5 50%,#eff1f5 100%);
+    background: -ms-linear-gradient(45deg,  #3d7ab1 0%,#32618c 50%,#eff1f5 50%,#eff1f5 100%);
+    background: linear-gradient(45deg,  #3d7ab1 0%,#32618c 50%,#eff1f5 50%,#eff1f5 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#3d7ab1), color-stop(50%,#32618c), color-stop(50%,#eff1f5), color-stop(100%,#eff1f5));
+    background: -webkit-linear-gradient(45deg,  #3d7ab1 0%,#32618c 50%,#eff1f5 50%,#eff1f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d7ab1', endColorstr='#eff1f5',GradientType=1 );
+    float: right;
+    margin: 0;
+  }
+    .thanks-block .ss-balloon{
+      color: #3d7ab1;
+      font-size: 36px;
+      position: absolute;
+      margin: 5px 0 0 62px;
+    }
+    .thanks-block .ss-balloon.big{
+      font-size: 59px;
+      margin: 20px 10px;
+    }
+    .thanks-block .mesaj{
+      font-size: 15px;
+      margin: 60px 0 20px 80px;
+      width: 400px;
+      float: left;
+    } 
+      .thanks-block .mesaj .title{
+        font-size: 21px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-family: $font-f-reg;
+      }
+    .thanks-block .ss-gift{
+      float: left;
+      font-size: 72px;
+      margin-top: 40px;
+    }
+  .thanks-adv{
+    // background: #116614;
+    color: #fff;
+  }
+    .thanks-adv .icon{
+      float: left;
+      font-size: 45px;
+      margin: 20px 50px 0 80px;
+    }
+    .thanks-adv .txt{
+      float: left;
+      margin: 20px 0 0 0;
+      width: 300px;
+    }
+    .thanks-adv-space{      
+      height: 30px;
+      // background: #116614;
+    }
+/**********
+********   VAULT - download prod 
+***********
+***********/
+.vault-cont{
+  /* Fallback for web browsers that don't support RGBa */
+  // background-color: rgb(179, 212, 252);
+  /* RGBa with 0.6 opacity */
+  // background-color: rgba(179, 212, 252, 0.8);
+  background-color: #2a3039;
+
+  width: 960px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  // border: 5px dashed rgba(255, 255, 255, 0.1);
+  border: 5px dashed #242a31;     box-shadow: 0 3px 20px #2a3139;
+  border-radius: 5px;
+  height: 600px;
+  margin-top: -300px;
+  width: 500px;
+  margin-left: -250px;
+  text-align: center;
+  cursor: default;
+
+  .ss-delete{
+    position: absolute;
+    color: #fff;
+    font-size: 26px;
+    margin: -20px -17px 0 0;
+    right: 0px;
+    cursor: pointer;
+  }
+
+  .files{
+    max-height: 510px;
+    overflow-y: scroll;
+  }
+}
+  .vault-cont .title{
+    font-family: $font-f-reg; font-weight: 500;
+    color: #fff;
+    text-shadow: 0 3px 0px rgba(41, 58, 71, 0.3);
+    font-size: 25px;
+    padding: 30px 0 20px 0;
+  }
+    .vault-cont .title:hover{
+      color: #fff;
+    }
+  .vault-cont .file{
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+    display: block;
+    text-align: left; padding-left: 50px;
+    word-wrap: break-word;
+    cursor: pointer;
+
+    .formats{
+      font-size: 13px;
+      color: #888d92;
+      padding-left: 27px;
+      display: block;
+    }
+  }
+    .vault-cont .file .icon{
+      padding: 3px;
+      position: relative;
+      top: 2px;
+    }
+    .vault-cont .file:hover{
+      text-decoration: none;
+      background: #1b2027;
+      cursor: pointer;
+    }
+
+
+
+	/***** Afisare Facturi ******/
+	a.linkInv {
+		text-decoration: none !important;
+	}
+	a.linkInv:hover {
+		text-decoration: none !important;
+	}
+	.dl-invoice-link{
+		padding: 15px 20px;
+		line-height: 1.6em;
+		color: #333333;
+	}
+	.dl-invoice-link{
+		cursor: pointer;
+	}
+	.dl-invoice-link .id{
+		font-weight: bold;
+	}
+	.dl-invoice-link .id{
+		text-decoration: none !important;
+	}
+	.dl-invoice-link .date{
+		color: #7d7d7d;
+		float: right;
+	}
+    .dl-invoice-link .red{
+      color: #FF665A;
+    }
+    .dl-invoice-link .green{
+      color: #34AA37;
+    }
+	a.linkInv:nth-child(odd) .dl-invoice-link{
+		background: #f5f6f8;
+	}

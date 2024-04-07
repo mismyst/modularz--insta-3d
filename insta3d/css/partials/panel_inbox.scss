@@ -1,0 +1,129 @@
+
+	/**
+	
+	===============  Inbox  ==================
+	
+	*/
+	.pan-inbox-row {
+		border-bottom: 1px solid #dedede;
+		color: #333;
+		width: 300px;
+		display: block;
+		cursor: pointer;
+	}
+	.pan-inbox-row:hover{
+		background: #f9f9f9;
+	}
+	.pan-inbox-row.active{ /* blue */
+		background: #ECF2F9;
+		border-bottom: 1px solid #BCD7F1;
+	}
+	.pan-inbox-row.active:hover{
+		background: #E8F0FA ;
+	}
+	.pan-inbox-row.in_use{ /* grey */
+		background: #1C2025;
+		border-bottom: 1px solid #000;
+		color: #fff;
+	}
+	.pan-inbox-row.in_use:hover{
+		background: #10151B;
+		/*cursor: default;*/
+	}
+		.pan-inbox-row .avatar{
+			float: left;
+			width: 63px;
+			text-align: center;
+		}
+			.pan-inbox-row .avatar img{
+				margin: 20px 0;
+				border-radius: 20px;
+				border: 1px solid rgba(0,0,0,0.3);
+			}
+		.pan-inbox-row .body{
+			float: left;
+			width: 237px;
+			overflow: hidden;
+			font-size: 12px;
+		}
+			.pan-inbox-row .body .date{ font-size: 11px;
+				float: right; padding: 8px 20px 0 0;
+				color: #498ECA;
+			}
+			.pan-inbox-row .body .author{
+				color: #949EA8;
+				padding: 8px 0 2px 0;
+			}
+			.pan-inbox-row .body .title{
+				font-size: 13px; color: #333;
+			}.pan-inbox-row.in_use .body .title{
+				color: #fff;
+			}
+			.pan-inbox-row .body .sample{
+				color: #949EA8;
+				padding: 5px 10px 8px 0;
+			}
+	
+	.outside_message_cont .pan-inbox-row{
+		width: 350px;
+	}.outside_message_cont .pan-inbox-row .body{
+		width: 267px;
+	}.outside_message_cont .pan-inbox-row .sample{
+				color: #333;
+	}.outside_message_cont .pan-inbox-row .avatar img{
+				margin: 15px 0;
+	}
+	
+	.msg-entry{
+		background: #f8f8f8;
+		border-top: 1px solid #fff;	
+		border-bottom: 1px solid #efefef;
+	}
+	.msg-avatar{
+		width: 103px;
+		float: left;
+		text-align: center;
+		padding: 10px;
+	}
+	.msg-avatar > a{
+		position: relative;
+	}
+	.msg-avatar img{
+		border-radius: 10px;
+		/*border: 3px solid rgba(0,0,0,0.1)*/
+		z-index: 2;
+		position: relative;
+		background: #efefef;
+	}
+	.msg-avatar a:nth-child(2){
+		padding: 12px 5px 4px 5px;
+		text-align: center;
+		min-width: 55px !important;
+		background: #0F161B;
+		border-radius: 5px;
+		font-size: 12px;
+		color: #fff;
+		/*text-shadow: 0 1px 0px #000;*/
+		z-index: 1;
+		top: -0px;
+		position: relative;
+		font-weight: bold;
+	}
+		.msg-entry .msg-msg{
+			float:left;
+			padding: 10px;
+			width: 435px;
+		}
+		.msg-entry .msg-msg a{
+			color: #1C5FC3;
+		}
+		.msg-entry .msg-msg a:hover{
+			text-decoration: underline;
+		}
+		.msg-entry .msg-date{
+			padding-top: 8px;
+			font-size: 12px;
+			color: #7d7d7d;
+			font-style: italic;
+		}
+	

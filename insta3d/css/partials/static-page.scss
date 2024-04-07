@@ -1,0 +1,119 @@
+@media screen and (max-width:1024px){
+    .static-page{
+        * {
+            box-sizing:border-box;
+        }
+        .a-top-about{
+            padding:0px 30px;
+        }
+        .a-header-search-block{
+            padding:0px 30px;
+            .about-font{
+                line-height: 45px;
+                margin:0px auto 20px;
+                display:block;
+            }
+        }
+        .a-about_content{
+            padding:0px 30px;
+            width:100%;
+            max-width:640px;
+            margin:0px auto;
+            .content{
+                width:100%;
+            }
+            .form-actions{
+                margin:20px auto 0;
+            }
+        }
+        &.sell{
+            .swu-rr{
+                padding:0px 30px;
+            }
+            .swu-network{
+                padding:60px 30px;
+                .yellow{
+                    display: block;
+                    margin:15px auto 10px;
+                }
+                .when-syndicating{
+                    margin: 10px auto 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .static-page{
+        &.sell{
+            .swu-header{
+                font-size:64px;
+                padding:120px 0px 40px;
+            }
+            .swu-rr{
+                .top-text{
+                    font-size:32px;
+                    &.first{
+                        &.big{
+                            font-size:120px;
+                        }
+                    }
+                }
+            }
+            .swu-network{
+                font-size:32px;
+                .yellow{
+                    .num{
+                        font-size:54px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .static-page{
+        .a-header-search-block{
+            margin:50px auto 0;
+        }
+        .a-about_content{
+            &.contact_content{
+                max-width:440px;
+                margin:30px auto 0px;
+                input{
+                    width:100%;
+                }
+            }
+        }
+        &.sell{
+            .swu-header{
+                padding:120px 30px 40px;
+                font-size:48px;
+                line-height: 48px;
+            }
+            .swu-advantages-cont{
+                padding:30px 0;
+                .swu-advantage{
+                    float:none;
+                    width: 100%;
+                    margin:0px auto;
+                    max-width:440px;
+                    padding:30px;
+                }
+            }
+            .swu-rr{
+                .top-text{
+                    &.first{
+                        &.big{
+                            line-height: 80px;
+                        }
+                    }
+                }
+            }
+            .swu-join{
+                padding:0px 30px;
+            }
+        }
+    }
+}

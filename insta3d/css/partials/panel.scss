@@ -1,0 +1,289 @@
+/**
+	
+	===============  Panel.php  ==================
+	
+	*/
+	
+	/* Panel Top */
+	.pan-top-dash{
+		// margin-top: 75px;
+	}
+	.pan-author{
+		float: left;
+		height: 102px;
+		width: 245px;
+		/*background:  #498eca;/* blue */
+		background: #303942;
+    background: #0F161B;
+    color: #b4cfe5;
+		border-bottom: 1px solid #323b44;
+	}
+		.pan-author .white{
+			color: #fff;
+		}
+		.pan-author > div{
+			padding: 20px 0 0 30px;
+		}
+			.pan-author > div > div{
+				font-size: 12px; line-height: 1.2em;
+			}
+		.pan-author a.light{
+			font-size: 22px; line-height: 1.6em;
+			font-weight: bold;
+		}
+	
+	.pan-title{
+		background: #fff;
+		height: 102px;
+		border-bottom: 1px solid #d4d7dc;
+		display: none;
+	}
+		.pan-title .title{
+			line-height: 110px;
+			font-size: 25px;
+			padding-left: 60px;
+		}
+		.pan-title .title .light{
+			color: #7d7d7d;
+		}
+		
+	/* Menu */
+	.pan-menu-cont{
+		padding-top: 30px;
+		background: #3b4250;
+	    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	    border-radius: 0 0 10px 0;
+/*
+    background: #151f26; 
+background: -moz-linear-gradient(top,  #151f26 0%, #36383b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#151f26), color-stop(100%,#36383b));
+background: -webkit-linear-gradient(top,  #151f26 0%,#36383b 100%);
+background: -o-linear-gradient(top,  #151f26 0%,#36383b 100%);
+background: -ms-linear-gradient(top,  #151f26 0%,#36383b 100%);
+background: linear-gradient(to bottom,  #151f26 0%,#36383b 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151f26', endColorstr='#36383b',GradientType=0 );*/
+
+		/*min-height: 880px;*/
+	    padding-bottom: 40px;
+	    margin-bottom: 20px;
+	    /*border-bottom: 3px solid #000;*/
+
+		width: 245px;
+		float: left;
+	}
+  .pan-menu-cont:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  /* .pan-menu-cont:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 20px; height: 20px;
+    background: #323B44;
+    background-image: -moz-linear-gradient( -45deg, rgb( 20, 35, 48 ) 0%, rgb( 30, 35, 39 ) 48.242%, rgb( 239, 241, 245 ) 49.512%, rgb( 239, 241, 245 ) 100%);
+    background-image: -webkit-linear-gradient( -45deg, rgb( 20, 35, 48 ) 0%, rgb( 30, 35, 39 ) 48.242%, rgb( 239, 241, 245 ) 49.512%, rgb( 239, 241, 245 ) 100%);
+
+    margin: 20px 0 0 225px;
+  }*/
+		ul.pan-menu{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-indent: 0;
+		}
+			.pan-menu > li > a{
+				width: 100%;
+				height: 55px;
+				display: block;
+				color: #c6cdda;
+				line-height: 52px;
+		        -webkit-transition: background 0.18s ease-in;
+		        -moz-transition: background 0.18s ease-in;
+		        -ms-transition: background 0.18s ease-in;
+		        -o-transition: background 0.18s ease-in;
+		        transition: background 0.18s ease-in;
+    
+			}
+			/* hover */
+			.pan-menu > li > a:hover{
+				background: #282e3a;
+				color: #fff;
+				text-decoration: none;
+				// color: #B3D4FC;
+			}
+				.pan-menu > li > a:hover .icon{
+					
+				}
+			/* active */
+			.pan-menu > li > a.active{
+				background: #1C2025;       
+        /*background: #498ECA;*/ 
+				color: #fff;
+				text-decoration: none;
+			}
+			.pan-menu > li > a.active:hover .icon{
+				color: inherit;
+			}
+				.pan-menu > li > a .icon{
+					font-size: 20px;
+					padding: 0 20px 0 30px;
+					position: relative;
+					top: 5px;
+				}
+				.pan-menu > li > a .text{
+					font-size: 14px;
+				}
+				.pan-menu > li > a .notiff{
+					background: #FF5459;
+					float: right;
+					color: #fff;
+					text-shadow: 0 1px 1px #d53539;
+					box-shadow: inset 0 1px 0 #ff787c;
+					border-radius: 20px;
+					line-height: 1.4em;
+					padding: 4px 10px 3px 10px;
+					font-size: 12px;
+					position: relative; top: 16px;
+					margin-right: 20px;
+				}
+			.pan-menu > li > a.no-lheight .text{
+				line-height: 1.4em;
+				position: relative;
+				top: -7px;
+			}
+        .pan-menu > li > a.no-lheight .text-darker{
+          line-height: 1.4em;
+          position: relative;
+          left: 74px;
+          top: -20px;
+          color: #919191;
+        }
+        .pan-menu > li > a.no-lheight.active .text-darker{
+          color: #B4CFE5;
+        }
+	
+	
+	.pan-body-cont{
+		
+	}
+	.pan-body {
+		width: 960px;
+		min-height: 500px;
+		margin: 10px 0 30px 40px;
+		float: left;
+	}				
+		.pan-body-block {
+			background: #fff;
+			/*border-bottom: 1px solid #d4d7dc;*/
+			box-shadow: 0 1px 1px #d4d7dc;
+			margin: 20px 0 0 20px;
+			min-height: 50px;
+      border-radius: 5px;
+		}
+			.pan-body-block.no_background{ /* no background */
+				background: none;
+				border: none;
+				box-shadow: none;
+				min-height: 0px;
+			}
+			.pan-body-block.note{
+				
+			}
+			
+			.helpnote {
+				display: block;
+				/*border: 1px solid #EEEBDC;*/
+				padding: 0 10px 0 20px;
+				background: #FFFEEE /*url('/images/helpnotebg.gif') repeat 0 0*/;
+				background: #fffdf1;
+				/*box-shadow: 1px 1px 0 #CFC9B7;*/
+				border-radius: 5px;
+			}
+			.helpnote .helppad {
+				border-left: 4px double #F3B3A9;
+				display: block;
+				padding: 23px 10px 15px 15px;
+				word-wrap: break-word;
+			}
+			.helpnote .helppad h4{
+				line-height: 22px;
+				font-size: 15px;
+				margin: 0;
+				padding: 5px 0 10px 0;
+			}
+			.helpnote .helppad ul {
+				list-style-type: disc;
+				padding: 0 0 10px 15px;
+				margin: 0;
+				color: #545454;
+				line-height: 18px;
+			}
+			.helpnote .helppad ul li{				
+				margin: 0 0 10px 0;
+			}
+		
+		/**** 2 pe rand ****/
+		.pan-body-block.b2{ /* 2 egale */
+			width: 460px;
+			float: left;
+		}
+						
+		.pan-body-block.b2_1{ /* 2, mica */
+			float: left;
+			width: 300px;
+		}
+		.pan-body-block.b2_2{ /* 2, MARE */
+			float: left;
+			width: 620px;
+		}
+			
+		/**** 3 pe rand ****/
+		.pan-body-block.b3{ /* 3 egale */
+			width: 300px;
+			float: left;
+		}
+		
+		/*** pt modele padding ***/
+		.pan-body-block .model-entry{
+			margin: 20px 0 0 20px;
+		}
+		
+		.pan-body-block > .title {
+			color: #A2AFC1;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+
+
+
+//// Panel invoices
+.info-overlay{ 
+	.info-cont{
+		left: 50%;
+	    top: 20%;
+	    position: fixed;
+	    /*height: 600px;*/
+	    width: 500px;
+	    margin-left: -250px; 
+	    overflow: scroll;
+	    height: 300px;
+	    overflow: hidden;
+	    /*box-shadow: 0 1px 4px hsla(0,0%,0%,1);*/
+	    /* added */
+	    line-height: 1.75em;
+	    font-size: 14px;
+
+	    padding: 29px 24px 24px 84px;
+	    background: none;
+		
+		.title{
+		    padding: 0 0 10px 0;
+		    font-size: 18px;
+		    font-weight:  bolder;
+		}
+	}
+
+}

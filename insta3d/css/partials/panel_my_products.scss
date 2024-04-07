@@ -1,0 +1,246 @@
+
+  /**
+  
+  ===============  My Products  ==================
+  
+  */
+
+  /* add products */
+    .pan-title .btn-add{
+        background: #ddf1e0;
+        color: #17b526;
+        height: 102px;
+        padding: 0 20px 0 20px;
+        float: right;
+        text-align: center;
+        /*border-left: 1px solid #c2e5c7;*/
+    }
+        .pan-title .btn-add:hover{
+            background: #17b526;
+            color: #fff;
+            text-decoration: none;
+        }
+        .pan-title .btn-add:focus{
+            background: #149920;
+        }
+        .pan-title .btn-add .icon{
+            display: block;
+            font-size: 24px;
+            padding: 20px 0 0 0;
+            font-weight: bold;
+        }
+
+    /* legend */
+  .pan-body .legend{
+    padding: 10px 0 10px 20px;
+    position: relative;
+    bottom: -15px;
+
+    .btn-stock{
+        padding: .4em .8em .4em;
+        margin: 0 10px 0 0;
+    }
+  }
+  .legend .ss-map{
+    font-size: 36px;
+    color: #d1d1d1;
+    float: left;
+    line-height: 1em;
+    padding-right: 30px;
+  }
+  .legend .type{
+    // default = draft
+    float: left;
+    // border-right: 1px solid #efefef;
+    color: #8ecaff;
+    padding: 5px 12px 5px 12px;
+    border-radius: 3px 0 0 3px;
+    background: #e1eef9;
+    background: #fff; text-align: center;
+    box-shadow: 0 1px 3px #dbdee2;
+
+    &.selected,&:hover{
+      background-color: #8ecaff;
+      color: #ffffff;    
+      box-shadow: 0 1px 4px #dbdee2;
+    }
+
+    &.review{
+        border-radius: 0;
+        color: #498eca;
+        &.selected,&:hover{
+            background-color: #498eca;
+            color: #ffffff;
+        }
+    }
+    // in moderation, no used
+    // &.mod{
+    //     border-radius: 0;
+    //     border-color: #ffc000;
+    //     color: #ffc000;
+    //     &.selected{
+    //         background-color: #ffc000;
+    //         color: #ffffff;
+    //     }
+    // }
+    
+    &.private{
+        border-radius: 0 3px 3px 0;
+        border: 0px;
+        color: #ff535b;
+        margin-right: 10px;
+
+        &.selected,&:hover{
+            background-color: #ff535b;
+            color: #ffffff;
+        }
+    }
+  }
+  .legend{
+    .sort-wrapper,
+    .search-wrapper,
+    .type-wrapper{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top:10px;
+        input, select{
+            height:28px;
+        }
+    }
+  }
+    /* my products */
+    .pan-body .my-product{
+        border-bottom: none;
+    }
+    .pan-body .my-product:nth-child(even){
+        background: #f8f9fa;
+        border-bottom: none;
+    }
+        .my-product.draft{
+            border-left: 5px solid #8ecaff;
+        }
+            .my-product.draft:hover{
+                box-shadow: 1px 0 1px #8ecaff;
+                position:  relative;
+            }
+        .my-product.review{
+            border-left: 5px solid #498eca;
+        }       
+            .my-product.review:hover{
+                box-shadow: 1px 0 1px #498eca;
+            } 
+            .my-product.review .action.private{ /* Cand e privat */
+                border-color: #2DAA44;
+                color: #2DAA44;
+            }
+            .my-product.review:hover .action.private{ /* Cand e privat */
+                background: #2DAA44;
+                color: #1f732f;
+            }       
+            .my-product.draft .action.private{ /* Cand e privat */
+                border-color: #2DAA44;
+                color: #2DAA44;
+            }
+            .my-product.draft:hover .action.private{ /* Cand e privat */
+                background: #2DAA44;
+                color: #1f732f;
+            }
+        .my-product.mod{
+            border-left: 5px solid #ffc000;
+        }
+        .my-product.private{
+            border-left: 5px solid #ff535b;
+        } 
+            .my-product.private:hover{
+                box-shadow: 1px 0 1px #ff535b;
+            }        
+            .my-product.private .action.private{ /* Cand e privat */
+                border-color: #2DAA44;
+                color: #2DAA44;
+            }
+            .my-product.private:hover .action.private{ /* Cand e privat */
+                background: #2DAA44;
+                color: #1f732f;
+            }
+        /* action buttons */
+        .my-product .action{
+            line-height: 40px;
+            font-size: 18px;
+            border-radius: 40px;
+            text-align: center;
+            border: 1px solid #ffc000;
+            color: #ffc000;
+            margin: 33px 0px 0 40px;
+            float: left;
+            width: 35px; height: 35px;
+        }
+            .my-product:hover .action{
+                background: #ffc000;
+                color: #997914;
+            }
+        .my-product .action.private{
+            color: #ff535b;
+            border-color: #ff535b;
+            margin-left: 20px;
+        }
+            .my-product:hover .action.private{
+                background: #ff535b;
+                color: #ad353b;
+            }
+        .my-product .action.delete{
+            color: #333;
+            border-color: #333;
+            margin-left: 20px;
+        }
+            .my-product:hover .action.delete{
+                background: #333;
+                color: #ccc;
+            }
+
+        .my-product .action:hover{
+            color: #000 !important;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .my-product .action.delete:hover{
+            color: #fff !important;
+        }
+.my-product .det .title{
+  width: 250px;
+}
+
+/******
+********** Royalty-Rate Block --
+*******/
+.pan-royalty-block{
+  background: #1c2025;
+  color: #fff;
+}
+  .pan-royalty-block > p{
+    text-align: center;
+  }
+  .pan-royalty-block p.blue{
+    font-size: 72px;
+    font-weight: lighter;
+    color: #498eca;
+    margin: 30px 0 0px 0;
+    line-height: 1em;
+  }
+  .pan-royalty-block p.blue sup{
+    font-size: 25px;
+    position: relative;
+    top: -42px;
+  }
+  .pan-royalty-block p.bold{
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0px 0 20px 0;
+  }
+  .pan-royalty-block ul li{
+
+  }
+  .pan-royalty-block p.detalii{
+    color: #aaa;
+    font-size: 12px;
+    padding: 15px 31px;
+  }

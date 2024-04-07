@@ -1,0 +1,284 @@
+
+/**
+  
+  ===============  Reports & Sales  ==================
+  
+  */
+  .pan-sales-stats{
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding: 25px 0 25px 0;
+  }
+    .pan-sales-stats > div:first-child{
+      color: #000;
+    }.pan-sales-stats > div:first-child strong{
+      display: block;
+      font-size: 22px;
+    }
+    .pan-sales-stats > div:last-child{
+      padding-top: 3px;
+      color: #7d7d7d;
+    }
+  .pan-sales-stats.last-cashout{
+    /*padding-top: 40px;
+  */}
+  
+  .rep-select select{
+    background:#fff !important;
+    padding: 7px !important;
+    box-shadow: 0 1px 1px #D4D7DC;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline:none;
+    display: inline-block;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+  }
+    .rep-select .select-label{
+      padding: 0 5px;
+      color: #7d7d7d;
+      font-size: 11px;
+    }
+  
+  
+  /******   Recently sold   ******/
+  .pan-body-block.b2_1.recently_sold_cont {
+    width: 200px;
+  }
+    .recently_sold_cont .model-entry{
+      margin-left: 30px;
+    }
+  
+
+  /** Recent Buyers -- Detalii facturi pentru artisti **/
+  .recent_buyers_cont{
+    width: 720px !important;
+    /*margin-bottom: 20px;*/
+    border-radius: 5px;
+  }
+  .recent_buyers_cont .title{
+    /*background: #6CB26D;
+    color: #fff;*/ 
+    /*background: #6CB26D;*/
+    color: #6CB26D;
+    padding: 20px 0 20px 35px;
+    text-align: left;
+  }
+  .recent_buyers_tbl{
+    display:table;
+    width: 100%;
+  
+    .line.top{
+      border-top: none;
+      background: #f5f5f5;
+      font-weight: bolder;
+    }
+    .line{
+      display:table-row;
+      width: auto;
+      clear:both;
+    }
+    .line:hover{
+      background: #f5f5f5;
+
+      .btn-options{
+        color: #7d7d7d;
+      }
+    }
+      .line .cell{
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;   
+        width: 20%; 
+        padding: 9px 0 9px 5%;
+        border-top: 1px solid #efefef;
+        min-height: 35px;
+      }
+      .line .cell:last-child{
+        padding-right: 5%;
+        padding-left: 0;
+      }
+      .line .cell.green{
+        text-align: right;
+        color: #4da944;
+      }
+      .line .cell.red{
+        color: #FF535B;
+      }
+      .line.top .cell{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-height: 0px;
+      }
+    .line .cell .light{
+      color: #7d7d7d
+    }
+    .line.top .cell.last{
+      text-align: right;
+    }
+    .line.top .cell.last > span{
+      position: absolute;
+      margin-left: -21px;
+      font-size: 21px;
+    }
+  
+    .suspect{
+      color: #FF535B;
+    }
+    // refund options
+    .btn-options{
+      width: 5px;
+      overflow: hidden;
+      display: block;
+      font-size: 28px;
+      color: #f5f5f5;
+      position: absolute;
+
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+
+  
+  /******   Top grosing this month   ******/
+  .pan-body-block.b2_2.top_selling_cont {
+    width: 720px;
+  }
+  
+  .top_selling_graph-cont{
+    background: #6CB26D;
+    padding-left: 10px;
+  }
+    .top_selling_graph-cont .title{
+      font-size: 14px;
+      color: #fff;
+      padding: 20px 0 20px 20px;
+      /*text-align: center;*/
+    }
+      .top_selling_graph-cont .xchart .color0 rect{
+        fill: #fff;
+      }
+      .top_selling_graph-cont .xchart .color0 rect:hover{
+        fill: #EFF1F5;
+        box-shadow: 1px 1px 2px #323B44;
+      }
+      .top_selling_graph-cont .xchart .axis .tick{
+        stroke: #65BA66;
+      }
+      .top_selling_graph-cont .xchart .axis text{
+        fill: #fff;
+      }
+    
+    .top_selling_graph-cont .images{
+      position: relative;
+      top: -5px;
+      left: 78px;
+    }
+      .top_selling_graph-cont .images img{
+        width: 35px;
+        height: 35px;
+        margin: 0 21px 13px 0;
+      }
+  
+  /******   Top grosing product foreach product   ******/ 
+  .top_products_graph-cont{
+    width: 550px;
+    padding-top: 20px;
+  }
+    .top_products_graph-cont > figure{
+      height: 200px;
+    }
+    
+    
+  .recently_sold_cont .model-entry-block{
+    float: none !important;
+  }
+  .recently_sold_cont .title{
+    padding-bottom: 20px;
+    color: #6CB26D;
+  }
+  .recently_sold_cont .date{
+    color: #7D7D7D;
+    padding: 10px;
+    text-align: center;
+    background: rgba(245,245,245,1);
+    background: -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff', GradientType=0 );
+  }
+/*********
+****** Packs
+***********/
+    .pan-packs{
+        background: #1c2025;
+        color: #fff;
+    }
+    .pan-packs .add{ 
+        color: #17b526; float: right;
+        line-height: 65px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .pan-packs .add:hover{
+        text-decoration: none;
+        color: #fff;
+        background: #17b526;
+    }
+    .pan-packs .add:focus{
+        background: #149920;
+    }
+        .pan-packs .add .ss-plus{
+            font-size: 18px;
+            padding: 0 5px 0 0;
+            position: relative;
+            top: 3px;
+        }
+    .pan-packs .title{
+        color: #fff;
+        text-align: left;
+        float: left;
+        padding: 20px;
+    }
+
+    .pan-packs .my-pack{
+        background: #136cba;
+        height: 110px;
+        color: #fff;
+        display: block;
+        margin-bottom: 1px;
+        overflow: hidden;
+        position: relative;
+    }
+    .pan-packs .my-pack:hover{
+        text-decoration: none;
+        background: #498eca;
+    }
+            .my-pack .absolute{
+                opacity: 0.3;
+                margin-top: -50px;
+            }
+        .my-pack .desc{
+            padding: 30px 0 0 20px;
+            position: relative; top: 10px; left: 20px;
+        }
+        .my-pack .desc > div{
+            width: 240px;
+           font-size: 18px;
+        }
+        .my-pack .ss-right{
+           float: right;
+           font-size: 24px;
+           display: none;
+           line-height: 110px;
+           position: relative; left: -15px;
+        }
+        .my-pack:hover .ss-right{
+           display: block;
+        }

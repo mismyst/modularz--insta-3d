@@ -1,0 +1,235 @@
+/* PARTIALS */
+/* ****** */
+/* categories bar */
+.categories-bar {
+  height: 103px;
+  /*background: #3b6ec2;*/
+  background: $grey_blue_main;
+  color: #fff;
+  position: relative;
+  overflow-y: hidden;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  margin-top: 8px;
+  // overflow-x: scroll;
+  font-weight: 500;
+
+  .s-label {
+    font-family: $font-f-reg;
+    color: $darker_blue;
+    background: $main-blue;
+    float: left;
+    width: 160px;
+    padding: 8px 0px 6px 0px;
+    margin: 32px 0 0 0;
+    border-radius: 0 3px 3px 0;
+    font-size: 16px;
+    text-align: center;
+    &:hover {
+      background: $light_blue;
+    }
+  }
+
+  &.free {
+    .s-label {
+      background: $main-green;
+      &:hover {
+        background: $light_green;
+      }
+    }
+    .categories-bar-inner a.selected {
+      color: $light_green;
+      &:before {
+        color: $light_green;
+      }
+      &:after {
+        background: $light_green;
+      }
+    }
+  }
+
+  .categories-bar-inner {
+    max-width: 1000px;
+    min-width: 662px;
+    margin: 0 auto;
+
+    a.font-all {
+      /*font-weight: bolder;*/
+      font-size: 30px;
+      margin-top: 34px;
+    }
+
+    a.font-all.selected:after {
+      top: 76px;
+    }
+
+    a {
+      // font-size: 26px; // no text
+      // margin-top: 40px; // no text
+      margin-top: 27px;
+      color: white;
+      width: 7.69%;
+      display: block;
+      float: left;
+      position: relative;
+      text-align: center;
+      @include transition(color 200ms ease);
+      font-size: 12px;
+      color: #c3c8d6;
+      cursor: pointer;
+    }
+    a:before {
+      cursor: pointer;
+      font-size: 26px;
+      display: block;
+      color: #fff;
+      /* triangle */
+      /**/
+    }
+
+    a.ss-plus {
+      color: #d6f3d6;
+      margin-top: 26px;
+
+      &:hover {
+        color: #6aca77;
+      }
+    }
+
+    a:hover {
+      /*color: #95baf8; */
+      color: $light_grey; /* V4 */
+      text-decoration: none;
+
+      &:before {
+        color: $light_grey;
+      }
+    }
+
+    a.selected:after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-left: 50%;
+      left: -5px;
+      top: 57px;
+      width: 10px;
+      height: 10px;
+      @include border-radius(5px);
+      background: $light_blue;
+    }
+
+    a.selected:before {
+      color: $light_blue;
+    }
+
+    a.selected {
+      /*color: #95baf8; */
+      color: $light_blue; /* V4 */
+    }
+
+    a.selected:hover {
+      color: white;
+    }
+
+    a .plus {
+      margin: -6px 0 0 -10px;
+
+      @include transition(margin 200ms ease, background 200ms ease);
+    }
+
+    a:hover .plus {
+      margin: -6px 0 0 -3px;
+    }
+
+    a:active .plus {
+      background: none;
+    }
+  }
+}
+
+.fg-bar {
+  background: $lightest_grey;
+  height: 130px;
+  width: 100%;
+  // overflow: hidden;
+  overflow-y: scroll;
+  box-shadow: 0 2px 5px #efefef;
+
+  .fg-bar-inner {
+    display: block;
+    margin: 15px auto;
+  }
+
+  a {
+    width: 100px;
+    text-align: center;
+    display: block;
+    float: left;
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+      .label {
+        color: #000;
+      }
+    }
+
+    .img {
+      display: block;
+      height: 64px;
+      width: 64px;
+      margin: 0 auto;
+      overflow: hidden;
+      img {
+        height: 64px;
+      }
+    }
+
+    .label {
+      display: block;
+      color: $grey_blue_main;
+      font-family: $font-bold;
+      text-align: center;
+      line-height: 1.2em;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-bar {
+    height: 85px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    margin-top: 0px !important;
+    & > .s-label {
+      margin-top: 20px;
+      margin-right: -180px;
+    }
+    .categories-bar-inner {
+      float: left;
+      padding-left: 180px;
+      white-space: nowrap;
+      .category-link,
+      .category-link.ss-plus {
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px 5px;
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        .label {
+          letter-spacing: -0.75px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .categories-bar {
+    .categories-bar-inner {
+      padding: 0px 15px;
+    }
+  }
+}

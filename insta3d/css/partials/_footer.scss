@@ -1,0 +1,244 @@
+
+/* --------------------------------------------------
+*	FOOTER \/
+* -------------------------------------------------------
+*/
+footer{/*url('/img/night-stars-low.jpg') center repeat-y */
+	background: #0F161B;
+	background: $grey_blue_main;
+	color: #fff;
+	font-size: 14px;
+	margin: 0; padding: 0; 
+}
+footer *{
+	box-sizing: border-box;
+}
+footer > div{ /* inner */
+	max-width: 1200px; min-height: 380px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.footer-top .slice{
+	// width: 235px;
+	width: 25%;
+	float: left;
+}
+.footer-top .awesome-logo {
+    margin: 20px 0px 0 0px;
+    color: #fff;
+    font-family: $font-f-bold;
+  	font-size: 24px;
+  	font-weight: 500;
+}
+.footer-top .logo .beta{
+	color: #FFF;
+	padding: 2px 5px;
+	border: 1px solid #686868;
+	text-transform: uppercase;
+	font-size: 11px;
+	position: relative;
+	top: -22px;
+	left: 5px;
+}
+.footer-top p{
+	font-family: 'Open Sans', 
+}
+
+	.footer-top .middle-links{
+		margin: 0 auto;
+		width: 70%;
+		text-align: center;
+		padding-left: 40px;
+	}
+		.footer-top .middle-links ul{
+			list-style: none;
+			padding: 0; margin: 0; text-indent:0;
+			text-align: left;
+		}
+			.footer-top .middle-links li{
+			}
+				.footer-top .middle-links li a{
+					color: #fff;
+				}
+				.footer-top .middle-links li a:hover{
+					color: #ccc;
+					text-decoration: none;
+				}
+					.footer-top .middle-links li a .dark{
+						color: $light_grey;
+					}
+			.footer-top .middle-links .title{
+      			font-size: 18px;
+				padding: 22px 0 13px 0;
+				font-weight: 500;
+			}
+			.footer-top .middle-links .navigate{
+				color: #fff;
+				font-family: $font-f-reg;
+			}
+			.footer-top .middle-links .search{
+				color: #fff;
+				font-family: $font-f-reg;
+			}
+			.footer-top .middle-links .ss-megaphone{
+				color: #fff;
+				font-size: 28px;
+				padding: 19px 0 9px 0;
+				display: block;
+			}
+			.footer-top .middle-links .talk{
+			}
+.footer-bottom{
+	font-size: 12px;
+	color: $light_grey;
+	padding-top: 100px;
+	padding-bottom:20px;
+}
+	.footer-bottom ul{
+		list-style: none;
+		padding: 0; margin: 0; text-indent:0;
+		text-align: left;
+		float: right;
+	}
+		.footer-bottom li{
+			display: inline-block;
+			&:before{
+				content: '/';
+			}
+			&:first-child{
+				&:before{
+					content:none;
+				}
+			}
+		}
+			.footer-bottom li a{
+				color: $light_grey;
+				padding: 0 10px;
+			}
+			.footer-bottom li:last-child a{
+				padding-right: 0px; 
+			}
+			.footer-bottom li a:hover{
+				color: #ccc; text-decoration: none;
+			}
+	.footer-bottom hr{
+		border-top:1px solid #383838;
+		margin: 10px 0 0px 0;
+	}
+	.we-heart-3d{
+		text-align: center;
+		padding: 30px 0 20px 0;
+	}
+	.we-heart-3d .ss-heart{
+		padding: 0 5px;
+	}
+	.we-heart-3d .bottom{		
+		color: #ff665a;
+	}
+	.we-heart-3d .absolute{
+		margin: -2px 0 0 -21px;
+	}
+	.we-heart-3d .middle{		
+		color: #ffeb7b;/*ff665a*/
+		position: absolute;
+		margin: 0 0 -2px -2px;
+	}
+	.we-heart-3d .top{		
+		color: #77a7ce;/*77a7ce*/
+		position: absolute;
+		margin: -2px -2px 0 0;
+	}
+	
+
+@media screen and (max-width: 1024px){
+	footer{
+		width:100%;
+		.content-wrapper{
+			padding:0px 30px;
+			width:100%;
+			.footer-top{
+				padding:15px 30px 0;
+				.slice{
+					width:30%;
+					margin-left:5%;
+					text-align: center;
+					&:nth-child(3n+1){
+						margin-left:0px;
+						clear:left;
+					}
+					li{
+						text-align: center;
+					}
+					.middle-links{
+						width:100%;
+						padding:0px;
+					}
+				}
+			}
+			.footer-bottom{
+				padding:60px 30px 40px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	footer{
+		.footer-bottom{
+			.copy{
+				width:100%;
+				float:none;
+				clear:both;
+				text-align: center;
+				display: block;
+				margin:20px auto;
+			}
+			.footer-menu{
+				width:100%;
+				float:none;
+				clear:both;
+				text-align: center;
+
+			}
+		}
+	}
+}
+
+@media screen and (max-width:640px) {
+	footer{
+		.content-wrapper{
+			.footer-top{
+				.slice{
+					width:45%;
+					margin-left:10%;
+					&:nth-child(3n+1){
+						margin-left:10%;
+						clear:none;
+					}
+					&:nth-child(2n+1){
+						margin-left:0%;
+						clear:left;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+@media screen and (max-width:520px) {
+	footer{
+		.content-wrapper{
+			.footer-top{
+				.slice{
+					width:100%;
+					clear:both;
+					margin:20px auto;
+					&:nth-child(3n+1){
+						margin:20px auto;
+					}
+				}
+			}
+		}
+	}
+}
